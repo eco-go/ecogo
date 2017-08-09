@@ -39,7 +39,79 @@
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            
+       <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<h1 style="color:gray;margin-left:4px;">Trending</h1>
+  <blockquote class="embedly-card"><h4><a href="http://www.npr.org/sections/thetwo-way/2017/07/12/536818782/massive-iceberg-breaks-free-in-antarctica">Massive Iceberg Breaks Free In Antarctica</a></h4><p>A massive iceberg the size of Delaware has broken free from Antarctica and is floating in the sea. Earlier Wednesday, scientists announced that the 6,000-square-kilometer (about 2,300 square miles) iceberg had come loose, after satellites detected it had calved off the Larsen C ice shelf on the Antarctic Peninsula.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+ 
+<blockquote class="embedly-card"><h4><a href="https://www.nytimes.com/interactive/2017/07/28/climate/more-frequent-extreme-summer-heat.html?rref=collection%2Fsectioncollection%2Fclimate&action=click&contentCollection=climate&region=rank&module=package&version=highlights&contentPlacement=2&pgtype=sectionfront">It's Not Your Imagination. Summers Are Getting Hotter.</a></h4><p>Extraordinarily hot summers - the kind that were virtually unheard-of in the 1950s - have become commonplace. This year's scorching summer events, like heat waves rolling through southern Europe and temperatures nearing 130 degrees Fahrenheit in Pakistan, are part of this broader trend.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<blockquote class="embedly-card"><h4><a href="https://www.theguardian.com/environment/2017/aug/07/usda-climate-change-language-censorship-emails">US federal department is censoring use of term 'climate change', emails reveal</a></h4><p>Staff at the US Department of Agriculture (USDA) have been told to avoid using the term climate change in their work, with the officials instructed to reference "weather extremes" instead.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<blockquote class="embedly-card"><h4><a href="https://www.nytimes.com/interactive/2017/05/18/climate/antarctica-ice-melt-climate-change.html?rref=collection%2Fsectioncollection%2Fclimate&action=click&contentCollection=climate&region=rank&module=package&version=highlights&contentPlacement=8&pgtype=sectionfront">Miles of Ice Collapsing Into the Sea</a></h4><p>This is the last of three dispatches from a New York Times reporting trip to Antarctica. From the air, the Ross Ice Shelf looks like a vast white plain extending to the horizon. The monochromatic landscape is relieved only occasionally by rocks poking through, or by deep crevasses in the ice itself.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<blockquote class="embedly-card"><h4><a href="https://www.sciencedaily.com/releases/2017/08/170808145502.htm">Extreme heat linked to climate change may adversely affect pregnancy</a></h4><p>Pregnant women are an important but thus far largely overlooked group vulnerable to the effects of extreme heat linked to climate change, according to new research by Sabrina McCormick, PhD, an Associate Professor of Environmental and Occupational Health at Milken Institute School of Public Health at the George Washington University.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776 </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "400px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>  
+</body>
+
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
